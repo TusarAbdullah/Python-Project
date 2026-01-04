@@ -130,7 +130,7 @@ class SnakeGameClass:
                 green = int(80 + 120 * ratio)
                 cv2.line(imgMain, self.points[i - 1], self.points[i], (0, green, 0), 18)
 
-        # ✅ SAFETY: points empty হলে আর crash না
+        # SAFETY 
         if not self.points:
             return imgMain
 
@@ -220,6 +220,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
